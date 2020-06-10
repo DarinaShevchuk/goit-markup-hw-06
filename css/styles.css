@@ -343,6 +343,7 @@ img {
   display: inline-block;
   min-width: 200px;
   border-radius: 4px;
+  border-width: 0;
   padding: 10px 32px;
   text-align: center;
   font-weight: 900;
@@ -599,15 +600,30 @@ Clients */
   color: rgba(255, 255, 255, 0.4);
 }
 
+.form-footer {
+  display: flex;
+  flex-direction: column;
+  outline: 2px solid white;
+}
+
 .label {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  display: block;
 
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--font-text-color);
 }
-
+.footer-mail {
+  padding: 18px 12px;
+  width: 358px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: unset;
+}
 .adress {
   font-style: normal;
   font-weight: 400;
@@ -640,6 +656,7 @@ Clients */
 
   min-width: 200px;
   border-radius: 4px;
+  border-width: 0;
 
   text-align: center;
   font-weight: 900;
