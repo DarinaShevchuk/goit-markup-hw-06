@@ -338,9 +338,57 @@
         </div>
       </section>
     </main>
-    <div data-modal class="backdrop">
+    <div data-modal class="backdrop is-hidden">
       <div class="modal">
-        <form action=""></form>
+        <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+        <form class="js-speaker-form form" autocomplete="off">
+          <label for="name" class="form-field">
+            <input type="text" class="form-input" name="name" placeholder=" " />
+            <p class="form-label">Имя</p>
+            <svg width="18px" height="18px" class="form-icon">
+              <use href="./images/sprite.svg#name"></use>
+            </svg>
+          </label>
+          <label for="name" class="form-field">
+            <input type="tel" class="form-input" name="tel" placeholder=" " />
+            <p class="form-label">Телефон</p>
+            <svg width="18px" height="18px" class="form-icon">
+              <use href="./images/sprite.svg#phone"></use>
+            </svg>
+          </label>
+          <label for="name" class="form-field">
+            <input
+              type="email"
+              class="form-input"
+              name="mail"
+              placeholder=" "
+            />
+            <p class="form-label">Почта</p>
+            <svg width="18px" height="18px" class="form-icon">
+              <use href="./images/sprite.svg#email"></use>
+            </svg>
+          </label>
+          <label for="comment" class="form-comment">
+            <textarea
+              class="comment"
+              name="comment"
+              id="comment"
+              placeholder=" "
+            ></textarea>
+            <p class="form-label">Комментарий</p>
+          </label>
+          <label class="form-field-policy">
+            <input class="checkbox" type="checkbox" name="policy" />
+            <span class="icon"></span>
+            <p>
+              Соглашаюсь с рассылкой и принимаю
+              <a class="policy-link" href="">Условия договора</a>
+            </p>
+          </label>
+          <button type="submit" class="button">
+            Отправить
+          </button>
+        </form>
         <button data-modal-close class="icon-close">
           <svg width="18px" height="18px">
             <use href="./images/sprite.svg#close"></use>
@@ -400,7 +448,8 @@
               </li>
             </ul>
           </div>
-          <form class="js-speaker-form">
+
+          <form class="js-speaker-form" autocomplete="off">
             <label for="email">
               <b class="label">подписаться на рассылку</b></label
             >
