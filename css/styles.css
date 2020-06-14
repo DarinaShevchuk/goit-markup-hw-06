@@ -376,6 +376,7 @@ textarea {
   background-image: url(../images/vector.svg);
   background-size: contain;
   background-origin: border-box;
+  background-repeat: no-repeat;
 }
 
 .submit-button {
