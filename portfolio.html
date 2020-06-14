@@ -243,7 +243,7 @@
             </a>
             <address class="adress">
               <p class="adress-map">
-                г. Киев, Бульвар Леси Украинки, д. 26, 4й этаж офис 427
+                г. Киев, Бульвар Леси Украинки, д. 26
               </p>
               <ul class="list">
                 <li class="element">
@@ -285,20 +285,47 @@
               </li>
             </ul>
           </div>
-          <div class="subscribe">
-            <p class="label">подписаться на рассылку</p>
-            <a href="" class="button-send"
-              >Подписаться
+
+          <form class="js-speaker-form" autocomplete="off">
+            <label for="email">
+              <b class="label">подписаться на рассылку</b></label
+            >
+            <input
+              class="footer-mail"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              autofocus
+            />
+            <button type="submit" class="button-send">
+              Подписаться
               <svg class="send-icon">
                 <use href="./images/sprite.svg#iconsend"></use>
               </svg>
-            </a>
-          </div>
+            </button>
+          </form>
         </div>
         <p class="copyright">
           2020 | Developed by GoIT Students
         </p>
       </div>
     </footer>
+    <!-- Скрипт для отправки форми -->
+    <script>
+      (() => {
+        document
+          .querySelector(".js-speaker-form")
+          .addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            new FormData(e.currentTarget).forEach((value, name) =>
+              console.log(`${name}: ${value}`)
+            );
+
+            e.currentTarget.reset();
+          });
+      })();
+    </script>
   </body>
 </html>
