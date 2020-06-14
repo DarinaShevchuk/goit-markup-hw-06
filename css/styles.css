@@ -366,6 +366,7 @@ textarea {
 }
 
 .policy-link {
+  text-decoration: underline;
   color: var(--button-color);
 }
 
